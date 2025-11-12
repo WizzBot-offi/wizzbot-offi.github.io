@@ -1,73 +1,104 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WizzBot | Tech Enthusiast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WizzBot | Tech Portfolio</title>
   <link rel="icon" type="image/png" href="favicon.png">
-  <meta name="description" content="Jithin AKA WizzBot — Tech Enthusiast & Tech Explorer. Loves IoT, circuits, and creating cool tech projects.">
-  <meta name="keywords" content="WizzBot, IoT, Electronics, HTML, CSS, Tech projects">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-  <link rel="stylesheet" href="ztyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+
 <header>
   <div class="header-info">
     <h1>WizzBot</h1>
-    <p>Tech Enthusiast & Tech Explorer</p>
+    <p>Tech Enthusiast & Circuit Wizard</p>
   </div>
-  <nav>
+
+  <nav id="navbar">
     <a href="#about">About</a>
+    <a href="#services">Services</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
   </nav>
+
+  <input type="checkbox" id="menu-toggle">
+
+  <label for="menu-toggle" class="hamburger">
+    <span></span><span></span><span></span>
+  </label>
+
+  <div class="side-menu">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
 </header>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hey! I'm WizzBot - a student, Tech Enthusiast & Tech Explorer. I’m really into electronics and IoT, and I love creating circuits, experimenting with sensors, and building small tech projects just for fun.</p>
-    <p>I’m still learning web basics like HTML and CSS, slowly understanding how websites work and how to design simple pages. I like trying new things, messing around with tech, and figuring stuff out as I go — that’s how I learn best.</p>
-    <p>I don’t have everything figured out yet, but I enjoy exploring and creating. If it involves circuits, coding, or new ideas, I’m all in.</p>
-  </section>
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <a href="electronics.html" class="card-link" title="Click For More Info">
+
+
+<section id="hero">
+  <h2>Hey! I'm WizzBot 👋</h2>
+  <p>I Build, Fix & Innovate Circuits — Your Tech Problems, Solved.</p>
+  <a href="#contact" class="cta-button">Hire Me</a>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<p>I'm WizzBot, a tech enthusiast passionate about circuits, IoT, and electronics. I create solutions, troubleshoot problems, and bring ideas to life.</p>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <div class="cards-container">
+    <div class="card"><h3>Circuit Design</h3><p>Designing efficient, reliable electronic circuits for projects.</p></div>
+    <div class="card"><h3>Troubleshooting</h3><p>Fixing electronics, IoT systems, and embedded solutions.</p></div>
+    <div class="card"><h3>IoT Projects</h3><p>Building connected devices and smart systems.</p></div>
+    <div class="card"><h3>Embedded Systems</h3><p>Arduino, ESP8266, NodeMCU based solutions.</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <a href="electronics.html" class="card-link" title="Click For More Info">
       <div class="card">
         <h3>Electronics</h3>
         <p>Simple useful electronic circuits.<br>Built 50+ electronic circuits.</p>
       </div>
-      </a>
-      <a href="embedded.html" class="card-link" title="Click For More Info">
+    </a>
+    <a href="embedded.html" class="card-link" title="Click For More Info">
       <div class="card">
         <h3>Embedded Systems</h3>
         <p>Embedded Systems needs a micro-controller to operate.<br>Built 15+ circuits.</p>
       </div>
-      </a>
-      <a href="iot.html" class="card-link" title="Click For More Info">
+    </a>
+    <a href="iot.html" class="card-link" title="Click For More Info">
       <div class="card">
         <h3>IoT Stuffs</h3>
         <p>IoT Systems are formed when Embedded Systems are Connected to internet.<br>Built 3 Models.</p>
       </div>
-      </a>
-    </div>
-  </section>
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="card">
-        <h3>IoT & Electronics</h3>
-        <p>Arduino, ESP8266, NodeMCU, Circuit Designs</p>
-      </div>
-      <div class="card">
-        <h3>Basic Web Development</h3>
-        <p>HTML, CSS basics</p>
-      </div>
-      <div class="card">
-        <h3>Tools</h3>
-        <p>TinkerCAD, Fritzing, Spck Editor</p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <p>&copy;WizzBot | Made with Frustration</p>
-  </footer>
+    </a>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="cards-container">
+    <div class="card"><h3>IoT & Electronics</h3><p>Arduino, ESP8266, NodeMCU, Circuit Designs</p></div>
+    <div class="card"><h3>Web Basics</h3><p>HTML, CSS fundamentals</p></div>
+    <div class="card"><h3>Tools</h3><p>TinkerCAD, Fritzing, Spck Editor</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:itzwizard007@gmail.com">itzwizard007@gmail.com</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 WizzBot | Built with Code & Frustration</p>
+</footer>
 </body>
 </html>
